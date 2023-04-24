@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script src="script.js"></script>
+    <link rel="icon" href="inte.png">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubra Seu Signo</title>
+
+</head>
+<body>
+
+<main>
+
+<div class="container">
+
+<section>
+
+<h1>Descubra Seu Signo</h1>
+
+<article id="rw">
+
+<div class="ips">
+
+<input type="number" id="data">
+<input type="number" id="data2">
+
+<button onclick="darSigno()"><img src="seta.png" alt="seta" id="imagem"></button>
+
+<div id="seusg"></div>
+
+</div>
+
+
+
+
+
+ </article>
+
+</section>
+
+</div>
+
+<section class="container2">
+
+<span id="inf"><a href="signos.html">CLIQUE AQUI PARA SABER MAIS SOBRE O SEU SIGNO </a></span>
+
+</section>
+
+
+</main>
+
+<script>
+
+    function darSigno() {
+
+        var dia
+
+        var mes
+     
+        var texto 
+
+        dia = document.querySelector("#data").value;
+        mes = document.querySelector("#data2").value;
+
+        switch(datas){
+        
+        case ((dia>=21&&mes==3) || (dia<=20&&mes==4)):
+        texto = "Seu signo é Áries";
+        break
+        
+        if ((dia>=24&&mes==9) || (dia<=23&&mes==10)){
+        ('Seu signo é Libras')
+        document.getElementById("cont").innerHTML=li;}
+        
+        if ((dia>=21&&mes==4) || (dia<=21&&mes==5)){
+       ('Seu signo é Touro')
+        document.getElementById("cont").innerHTML=ta;}
+
+        if ((dia>=24&&mes==10) || (dia<=22&&mes==11)){
+         ('Seu signo é Escorpião')
+        document.getElementById("cont").innerHTML=es;} 
+
+        if ((dia>=22&&mes==5) || (dia<=21&&mes==6)){
+      ('Seu signo é Gêmeos')
+        document.getElementById("cont").innerHTML=ge;} 
+        
+        if ((dia>=23&&mes==11) || (dia<=21&&mes==12)){
+        ('Seu signo é Sagitário')
+        document.getElementById("cont").innerHTML=sa;} 
+        
+        if ((dia>=21&&mes==6) || (dia<=23&&mes==7)){
+        ('Seu signo é Cancer')
+        document.getElementById("cont").innerHTML=ca;} 
+        
+        if ((dia>=24&&mes==7) || (dia<=23&&mes==8)){
+        ('Seu signo é Capricórnio ')
+        document.getElementById("cont").innerHTML=cap;} 
+        
+        if ((dia>=21&&mes==1) || (dia<=19&&mes==2)){
+        ('Seu signo é Leão')
+        document.getElementById("cont").innerHTML=le;} 
+        
+        if ((dia>=24&&mes==8) || (dia<=23&&mes==9)){
+        ('Seu signo é Áquario')
+        document.getElementById("cont").innerHTML=aac;} 
+        
+        if ((dia>=21&&mes==3) || (dia<=20&&mes==4)){
+        ('Seu signo é Virgem')
+        document.getElementById("cont").innerHTML=vi;} 
+        
+        if ((dia>=20&&mes==2) || (dia<=20&&mes==3)){
+        ('Seu signo é Peixes')
+        document.getElementById("cont").innerHTML=pi;} 
+
+    }
+
+        document.getElementById("seusg").innerHTML = texto
+        
+        }
+
+
+
+</script>
+
+
+    
+</body>
+</html>

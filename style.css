@@ -1,0 +1,245 @@
+* {
+
+    border: olid red;
+
+}
+
+@font-face {
+    font-family: thunder;
+    src: url(Thunder\ Kingdom.ttf);
+}
+
+@font-face {
+    font-family: placeholder;
+    src: url(DESIGNER.otf);
+}
+
+@font-face {
+    font-family: conteudo;
+    src: url(Saudagar.ttf);
+}
+
+@font-face {
+    font-family: main;
+    src: url(Philosopher-Regular.ttf);
+}
+
+body {
+
+
+    margin: 0;
+    padding: 0;
+    background-image: url('https://media-manager.noticiasaominuto.com.br/1920/naom_5d693378d5c4a.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+
+}
+
+main {
+
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+#signos {
+
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    font-family: main;
+    font-size: 20px;
+
+}
+
+.container {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.container2 {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+button {
+
+    width: 90px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+
+.card {
+
+    background-color: #192e3fa4;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+
+.card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+#frase {
+
+    color: white;
+    text-align: justify;
+    font-family: conteudo;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 25px;
+
+}
+
+h1 {
+
+    color: white;
+    font-family: thunder;
+
+}
+
+.lupa {
+
+    width: 20px;
+    height: auto;
+
+}
+
+.card2 {
+
+    background-color: #192e3fa4;
+    width: 700px;
+    min-height: 400px;
+    max-height: 700px;
+    border-radius: 10px;
+
+
+}
+
+.card2 h1 {
+
+    text-align: center;
+
+}
+
+
+.card2:hover {
+
+    transform: translateY(-5px);
+}
+
+#stats {
+
+
+    font-family: conteudo;
+    font-size: 30px;
+    display: flex;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+}
+
+#caracs {
+
+    cursor: default;
+
+}
+
+#sig {
+
+    cursor: default;
+
+}
+
+.card3 {
+
+    background-color: #192e3fa4;
+    width: 400px;
+    min-height: 300px;
+    max-height: 500;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+
+
+}
+
+.card3:hover {
+
+    transform: translateY(-5px);
+
+}
+
+#frases {
+
+    cursor: default;
+
+}
+
+.card4 {
+
+    background-color: #192e3fa4;
+    width: 700px;
+    min-height: 300px;
+    max-height: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card4:hover {
+
+    transform: translateY(-5px);
+    cursor: pointer;
+
+}
+
+#combinam {
+
+    font-family: conteudo;
+    font-size: 25px;
+    display: flex;
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+#frases {
+
+    cursor: default;
+
+}

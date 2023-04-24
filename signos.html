@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" href="icon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signos</title>
+</head>
+
+<body>
+    
+<main>
+
+<div class="container">
+
+<section class="card">
+
+<h1 id="sig">Escolha seu Signo</h1>
+<input type="search" id="signos" list="historico" spellcheck="off" autocomplete="off">
+<button onclick="escolhaSigno()"><img src="lupa.png" alt="" class="lupa"></button>
+
+
+<datalist id="historico">
+
+    <option value="Áries"></option>
+    <option value="Touro"></option>
+    <option value="Gemêos"></option>
+    <option value="Câncer"></option>
+    <option value="Leão"></option>
+    <option value="Virgem"></option>
+    <option value="Libra"></option>
+    <option value="Escorpião"></option>
+    <option value="Sagitário"></option>
+    <option value="Capricórnio"></option>
+    <option value="Aquário"></option>
+    <option value="Peixes"></option>
+
+</datalist>
+
+</section>
+
+<section class="card2">
+
+    <h1 id="resumo">Resumo</h1>
+  <div id="frase"></div>
+
+</section>
+
+</div>
+
+<div class="container2">
+
+<section class="card3">
+
+    <h1 id="caracs">Principais Características</h1>
+    <div id="stats"></div>
+
+</section>
+
+<section class="card4">
+
+    <h1 id="comb">Signos que Combinam</h1>
+    <div id="combinam"></div>
+
+</section>
+
+</div>
+
+</main>
+
+<script>
+
+function escolhaSigno() {
+
+var texto
+
+var stats
+
+var signo = document.querySelector('#signos').value;
+
+switch(signo){
+
+case 'Áries':
+texto = "Áries é impaciente, não suporta limites e não costuma se dar bem com ordens e autoridades em geral. No fundo é uma criança desobediente, mas com um bom coração, com a cabeça cheia de ideias de transformar o mundo. No entanto seus humores bem como suas explosões duram pouco. Quase nunca guardam rancor.";
+document.getElementById('stats').innerHTML = "Impacientes <br> Persistentes <br> Objetivos <br> Sociáveis <br> Determinados <br> Impulsivos <br> Individualistas <br> Entusiasmados <br> Cheios de energia <br> Emocionais"
+document.getElementById('combinam').innerHTML = "Os signos que combinam mais com Áries costumam ser os demais signos de Fogo (Leão e Sagitário), pois compreendem a forma como os arianos enxergam a realidade. Ao mesmo tempo, signos de Ar (Aquário, Gêmeos e Libra) também são uma boa aposta, pois são mais desprendidos e não vão sufocar os nativos do signo de Áries.";
+break
+
+case 'Touro':
+texto = "As características de Touro refletem muito o elemento o qual pertencem, que é a Terra. Por ser um elemento fixo, dificilmente você encontrará taurinos que amem mudanças. Sendo assim, esse elemento também representa certa rigidez e teimosia de quem tem os pés fincados sempre no chão. Além disso, eles costumam ser mais estratégicos e racionais, pensando bastante antes de tomar alguma atitude."; 
+document.getElementById('stats').innerHTML = "Confiáveis <br> Pacientes <br> Materialistas <br> Prestativos <br> Persistentes <br> Sensatos <br> Esforçados <br> Orgulhosos <br> Organizados <br> Protetores <br> Possesivos <br> Estáveis <br> Detestam Conflitos <br> Objetivos"
+document.getElementById('combinam').innerText = "Os signos que combinam com Touro são os demais de Terra (Capricórnio e Virgem), pois entendem bem toda essa questão de racionalidade que eles têm. Sendo assim, os signos de Água (Câncer, Escorpião e Peixes) podem compreender mais esse lado afetivo e dedicado aos relacionamentos."
+break 
+
+case 'Gemêos':
+texto = "Ao mesmo tempo, levam a fama de ter “duas caras”. Na verdade, isso indica a dualidade essencial do signo de Gêmeos. De fato, são inconstantes e não se limitam a apenas uma ideia ou forma de agir! Além disso, os nativos sofrem de muita agitação, e podem se perder nas próprias ideias e frustrações. É preciso entender que um geminiano tem seus altos e baixos, mas também são excelentes companhias.";
+document.getElementById('stats').innerHTML = "Inteligentes <br> Adaptáveis <br> Imprevisíveis <br> Indecisos <br> Extrovertidos <br> Ansiosos <br> Temperamentais <br> Falantes <br> Inquietos <br> Sensíveis <br> Persuasivos <br> Charmosos"
+document.getElementById('combinam').innerText = "Os signos que combinam com Gêmeos são os demais signos de Ar: Libra e Aquário, pois compreendem a questão liberdade e são mais objetivos. Da mesma forma, os signos de Fogo (Áries, Leão e Sagitário) podem ser boas combinações, a medida que também são extrovertidos e podem ser tão intensos quanto os geminianos.."
+break
+
+case 'Câncer':
+texto = "Os nativos desse signo pertencem ao elemento Água. Dessa forma, ao mesmo tempo que a fonte da nossa vida, ela também flui e é incerta – assim como as emoções humanas. Portanto, quem tem a Água como base tende a ter variações grandes de sentimentos. Assim é com os cancerianos, que são conhecidos por serem dramáticos ou até mesmo um pouco ranzinzas. Na verdade, essas características de Câncer são reflexo do lado afetivo mais intenso.";
+document.getElementById('stats').innerHTML = "Companheiros <br> Dedicados <br> Perceptivos <br> Melindrosos <br> Leais <br> Inseguros <br> Ligados à família <br> Possessivos <br> Sensíveis <br> Solidários <br> Vitimistas <br> Protetor <br> Caseiros <br> Manipuladores <br> Gentis;"
+document.getElementById('combinam').innerText = "Ah, como os cancerianos são românticos e dedicados! Quando estão apaixonados, movem montanhas para que o relacionamento dê certo. Combina com os demais signos cardinais de Água (Escorpião e Peixes), que vão entender a intensidade de sentimentos que os estimulam e são igualmente passionais. Já os signos de Terra (Touro, Virgem e Capricórnio) também são uma boa tentativa de sinastria amorosa, uma vez que trazem mais racionalidade e praticidade para a relação, equilibrando-a."
+break
+
+case 'Leão':
+texto = "O signo de Leão pertence ao elemento Fogo, que basicamente, mostra muita determinação, volatilidade e animação. Quem experimenta toda essa energia tem muita coragem para enfrentar o que for, mas também se torna um pouco temperamental demais. Quanto à fama, são conhecidos como os mais vaidosos e exibidos do Zodíaco. Na verdade, eles são regidos por nada menos que o Sol, e realmente são cheios de autoconfiança e gostam de tudo o que é belo ou pomposo."
+document.getElementById('stats').innerHTML = "Leais <br> Ambiciosos <br> Vaidosos <br> Extrovertidos <br> Corajosos <br> Espertos <br> Egocêntricos <br> Realistas <br> Ciumentos <br> Orgulhosos <br> Independentes <br> Disciplinados <br> Confiantes <br> Controladores <br> Tem bom coração"
+document.getElementById('combinam').innerText = "Os signos de Fogo, ou seja: Áries, Leão e Sagitário são uma combinação interessante, porque entendem a intensidade e o dinamismo característico desse elemento. Por outro lado, os signos de Ar (Gêmeos, Libra e Aquário) também são uma boa sugestão, pois além do ar ser o combustível que alimenta o fogo (olha aí!), ele também traz um pouco mais de equilíbrio por conta da racionalidade característica desses nativos."
+break
+
+case 'Virgem':
+texto = "O signo de Virgem tem como elemento base a Terra. Em outras palavras, isso significa que gostam da estabilidade de ter seus pés fincados no chão, tateando o que é palpável e seguro. Portanto, os virginianos costumam ser bastante racionais, cautelosos e apegados ao que tem comprovação. Assim, a objetividade e as análises constantes também são caminho conhecido para quem nasceu sob esse signo. De fato, tanta minúcia, cuidado e perfeccionismo lhes deu o título de signo “mais chato” do Zodíaco. Aliás, serem “cheios de manias” também define bem os virginianos."
+document.getElementById('stats').innerHTML = "Atentos a tudo e a todos <br> Sinceros <br> Organizados <br> Ansiosos <br> Prestativos <br> Críticos <br> Detalhistas <br> Pontuais <br> Impacientes <br> Eficientes <br> Objetivos <br> Pessimistas <br> Trabalhadores <br> Insistentes <br> Confiáveis <br> Sagazes <br> Desconfiados"
+document.getElementById('combinam').innerText = "No campo amoroso, os virginianos combinam mais com os signos de Terra (Touro, Capricórnio ou mesmo Virgem) ou os de Água (Câncer, Escorpião e Peixes). Enquanto os signos do mesmo elemento entendem a praticidade e racionalidade que o cerca, os de Água complementam e fornecem o que é preciso para que o solo dê frutos: inspiração, paixão e mais sensibilidade."
+break
+
+case 'Libra':
+texto = "A personalidade de Libra é mais voltada às ideias e ao racional. Afinal, é um dos signos de Ar, o que significa que pensam bastante e não gostam de se sentir limitados. Inclusive, a inteligência se manifesta nos librianos até mesmo por refletirem antes de emitir uma opinião. O símbolo de Libra remete à uma balança, e é exatamente disso que eles gostam: harmonia, paz e ponderação. Logo, evitam conflito a todo custo e também gostam de ser tratados com educação e respeito."
+document.getElementById('stats').innerHTML = "Indecisos <br> Charmosos <br> Comunicativos <br> Influenciáveis <br> Sinceros <br> Tranquilos <br> Impacientes <br> Ansiosos <br> Pacíficos <br> Certinhos <br> Criativos <br> Inseguros <br> Distraídos <br> Autoritários <br> Justos <br> Contrário às críticas <br> Sensatos"
+document.getElementById('combinam').innerText = "Os signos que combinam com Libra são os demais de Ar (signo de Gêmeos, Aquário ou mesmo Libra), pela compreensão do jeito objetivo e racional de ser. Já os signos de Fogo (Áries, Leão e Sagitário), trazem mais paixão e ânimo para os ponderados librianos, sem necessariamente acrescentar drama à relação."
+break
+
+case 'Escorpião':
+texto = "Como são poderosos os escorpianos! Pertencentes do elemento Água, os escorpianos traduzem perfeitamente aquela máxima: “águas calmas, mas profundas”. A saber, a água representa as emoções, a percepção e também à interiorização. Sendo assim, o signo de Escorpião é um ótimo representante dessas características, pois em sua personalidade há um mistério e uma potência que carregam todo a energia e a capacidade tem de nos dar a vida, mas também de nos arrastar para o fundo se não tomarmos cuidado. Normalmente, a relação com tudo o que o rodeia é de “8 ou 80”: não gostam de nada pela metade e não se contentam com o que é morno. Essa firmeza e obstinação fazem com que tenham personalidade forte, nem sempre compreendida pelos demais signos do Zodíaco."
+document.getElementById('stats').innerHTML = "Intuitivos <br> Sedutores <br> Desconfiados <br> Observadores <br> Apaixonados <br> Curiosos <br> Exigentes <br> Responsáveis <br> Sinceros <br> Rancorosos <br> Inteligentes <br> Hipnóticos <br> Sociáveis <br> Vingativos <br> Corajosos <br> Protetores <br> Auto-confiantes;"
+document.getElementById('combinam').innerText = "Basicamente, todos os do mesmo elemento (Água – Câncer, Peixes e o próprio Escorpião), pois entendem bem a profundidade dos seus sentimentos e conseguem administrar o melodrama do signo – pois também possuem essa característica! rs, Além disso, os signos de Terra (Touro, Virgem e Capricórnio) podem ser interessantes, pois trazem um pouco mais de razão, estabilidade e a confiança que os escorpianos apreciam e necessitam."
+break
+
+case 'Sagitário':
+texto = "A base do signo de Sagitário é o Fogo. Embora eles sejam pessoas muito ligadas ao intelecto (notória característica do elemento Ar), a chama se faz presente no signo. Isso porque são estimulantes e espontâneos, além de otimistas e animados. Além disso, têm uma característica básica do componente, que é a impulsividade. Quando um sagitariano se irrita ou quer exprimir sua opinião (e eles sempre querem), fazem sem pensar nas consequências. De tal forma que os nativos de outros signos costumam falar que essas pessoas dão seus “coices” (referência ao centauro que os representa, meio homem e meio cavalo) quando contrariados ou querem reforçar seu ponto com “delicadeza”. rs"
+document.getElementById('stats').innerHTML = "Intelectuais <br> Simpáticos <br> Ousados <br> Exigentes <br> Festeiros <br> Críticos <br> Animados <br> Impacientes <br> Esperançosos <br> Excessivamente confiantes <br> Éticos <br> Bondosos <br> Curiosos <br> Sarcásticos <br> Livres <br> Adaptáveis <br> Intolerantes <br> Obstinados <br> Soberbos <br> Justos <br> Sensatos"
+document.getElementById('combinam').innerText = "Acima de tudo, Sagitário combina mais com os próprios signos de Fogo (Áries, Leão e Sagitário) ou com os de Ar (Gêmeos, Libra e Aquário).No caso dos signos do mesmo elemento, a necessidade de estar sempre em movimento e também a paixão pela vida é compreendida com facilidade. No entanto, os signos de Ar fazem com que esse grande senso de liberdade e a necessidade de ir em busca do novo ou de informações sobre tudo também seja completamente respeitado."
+break
+
+case 'Capricórnio': 
+texto = "Dentre os signos, provavelmente os capricornianos são os mais céticos. Isso porque eles têm como elemento base a Terra, ou seja: seus pés estão bem fincados no chão, no que frutifica, é palpável e vale a pena. Outro ponto chave dos signos terrenos é a disciplina e a dedicação que brota aos montes quando estão empenhados em obter algo. A personalidade de Capricórnio é, particularmente, sábia e bastante discreta. Dificilmente você verá um capricorniano raiz cometendo loucuras impensadas ou sendo impulsivo."
+document.getElementById('stats').innerHTML = "Eficientes <br> Inteligentes <br> Racionais <br> Teimosos <br> Realistas <br> Prudentes <br> Protetores <br> Rígidos <br> Versáteis <br> Mau humorados <br> Batalhadores <br> Disciplinados <br> Descrentes <br> Organizados <br> Pacientes <br> Resmungões <br> Focados <br> Maduros <br> Talentosos <br> Conservadores"
+document.getElementById('combinam').innerText = "Os signos que mais combinam com Capricórnio são os demais de Terra (Touro, Virgem ou mesmo Capricórnio) e também os de Água (Câncer, Escorpião e Peixes). Antes de mais nada, os de igual elemento possuem características semelhantes em termos de busca por estabilidade, praticidade e tranquilidade. Logo, compreenderão o estilo mais racional e calmo de Capricórnio. Em contrapartida, os de Água trazem equilíbrio e um pouco mais de emoção para o relacionamento, propondo abertura para temas mais abstratos e também complementando com afeto e sensibilidade os focados capricornianos."
+break
+
+case 'Aquário':
+texto = "A personalidade dos aquarianos se conecta diretamente ao elemento o qual pertencem, ou seja: Ar. Afinal, o aspecto fala sobre o poder das ideias, da criatividade e também do desprendimento. Assim, de todos os signos de Ar (Gêmeos e Libra também estão nesse grupo), o signo de Aquário é o mais inventivo, sempre ligado a tudo o que acontece e com forte interesse por diferentes áreas do conhecimento."
+document.getElementById('stats').innerHTML = "Revolucionários <br> Inteligentes <br> Rebeldes <br> Argumentativos <br> Mente aberta <br> Frios <br> Modernos <br> Inflexíveis <br> Generosos <br> Racionais <br> Rebeldes <br> Comunicativos <br> Sinceros <br> Humanitários <br> Observadores <br> Distantes <br> Curiosos <br> Desbocados"
+document.getElementById('combinam').innerText = "Os signos que combinam mais com Aquário são os signos de Ar (Gêmeos, Libra e os próprios aquarianos) e os de Fogo (Áries, Leão e Sagitário). Primeiramente, porque os signos de Ar se reconhecem nas questões mais filosóficas e a admiração pelo estudo, as ideias e o desprendimento. Já os de Fogo são seus complementares, não apenas pelos dois elementos potencializarem um ao outro, mas pelos nativos ajudarem os aquarianos a tomar mais iniciativa e ao mesmo tempo, trazendo dinamismo e emoção para sua vida – sem todo o elemento de drama ou possessividade."
+break
+
+case 'Peixes':
+texto = "O signo de Peixes é o último do Zodíaco e seu elemento é a Água. Certamente, esse elemento confere aos piscianos características muito positivas, como a sensibilidade, a adaptação e também a forte intuição. No entanto, como os demais signos de Água, também pode ter dificuldade de equilibrar as emoções, podendo transbordar seus sentimentos de forma dramática.São pessoas criativas e talentosas, mas também são considerados como o “signo do mundo da Lua”. Devido à imaginação muito fértil, é comum que os piscianos se percam em suas ideias, distraindo-se pela beleza de cada coisinha admirável que há no mundo. rs"
+document.getElementById('stats').innerHTML = "Prestativos <br> Sensíveis <br> Desorganizados <br> Compreensivos <br> Inocentes <br> Preocupados <br> Otimistas <br> Indecisos <br> Influenciáveis <br> Confiáveis <br> Procrastinadores <br> Tolerantes <br> Protetores <br> Esquecidos <br> Generosos <br> Atenciosos <br> Carentes <br> Bondosos <br> Ansiosos <br> Justos <br> Humildes"
+document.getElementById('combinam').innerText = "Os piscianos combinam mais com os próprios signos de Água (Câncer, Escorpião ou mesmo Peixes) e os de Terra (Touro, Virgem e Capricórnio). Obviamente, os de Água entenderão todo o aspecto sentimental, intenso e empático dos que tem o signo de Peixes. Já os de Terra trazem toda a praticidade (que o pisciano possui ZERO), estabilidade e um pouco de bem vinda racionalidade para a relação."
+break
+
+default: //Se nenhum dos casos acima bater, ele vai dar o resultado que escolhermos.
+
+texto = 'Insira um Signo Existente.';
+
+} 
+
+document.getElementById("frase").innerHTML = texto
+
+document.getElementsById("stats").innerHTML = stats
+
+}
+
+</script>
+
+</body>
+</html>

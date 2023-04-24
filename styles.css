@@ -1,0 +1,155 @@
+* {
+
+
+border: olid red;
+
+}
+
+@font-face {
+    font-family: conteudo;
+    src: url(Forque.ttf);
+}
+
+main {
+
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 11%;
+
+
+
+}
+
+body {
+
+    margin: 0;
+    padding: 0;
+background-color: black;
+flex-direction: row;
+display: flex;
+justify-content: center;
+
+}
+
+#rw {
+
+display: flex;
+flex-direction: row;
+
+}
+
+.container {
+
+display: flex;
+flex-direction: column;
+background-color: #2d2c26;
+color: white;
+border-radius: 20px;
+width: 500px;
+height: 200px;
+text-align: center;
+
+}
+
+.container h1 {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.container2 {
+
+    display: flex;
+    flex-direction: column;
+    background-color: #2d2c26;
+    color: white;
+    border-radius: 20px;
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+    margin-top: 20%;
+    padding-top: 5%;
+
+    }
+
+    #inf {
+
+font-family: conteudo;
+font-size: 60px;
+    
+    }
+
+    a {
+
+color: white;
+text-decoration: none;
+
+    }
+
+    a:visited {
+
+color: white;
+text-decoration: none;
+
+    }
+
+#data {
+
+width: 100px;
+height: 50px;
+text-align: center;
+border-radius: 20px;
+margin-left:85%;
+
+}
+
+#data2 {
+
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    border-radius: 20px;
+    
+    }
+
+.ips {
+
+display: flex;
+gap: 1rem;
+justify-content: center;
+
+}
+
+button {
+
+border-radius: 40px;
+padding: 10px;
+display: flex;
+flex-direction: row;
+cursor: pointer;
+background-color: #2d2c26;
+border: none;
+
+
+
+
+}
+
+#seusg {
+
+color: white;
+
+}
+
+#imagem {
+
+    width: 40px;
+    height: 40px;
+padding: 0;
+margin: 0;
+
+
+}
